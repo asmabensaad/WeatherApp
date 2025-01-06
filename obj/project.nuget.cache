@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "p5jBlX7z3S/vafStrAZbX/7cxPmTfLtVJF9/v8XlP+MHMlKq2ZEY4LeRUsJGhsXhQDRGcf2Q5CHWSi7o+yhIaA==",
+  "dgSpecHash": "6PPTZfFjyR+J5dUevJIrnQr6U1c8emHHBj2rBVcLnh/ldscrRLxNcvDeZQV5hISpZayXgPWX+EB9oPgUfELoBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\abs\\source\\repos\\WeatherApp\\WeatherApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\abs\\.nuget\\packages\\nettopologysuite\\2.5.0\\nettopologysuite.2.5.0.nupkg.sha512",
+    "C:\\Users\\abs\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }
