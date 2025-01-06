@@ -1,1 +1,23 @@
+# Ignorer les fichiers générés par le build
+bin/
+obj/
+
+# Ignorer les fichiers de configuration spécifiques à l'utilisateur
+*.user
+*.userosscache
+*.suo
+*.swp
+
+# Ignorer les fichiers spécifiques au système d'exploitation
+Thumbs.db
+Desktop.ini
+
+# Ignorer les fichiers de cache
+.cache/
+
+# Ignorer les fichiers de dépendances générés
+node_modules/
+
+# Ignorer les fichiers de l'environnement .NET
+.vs/
 .vs/
