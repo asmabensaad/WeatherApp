@@ -5,8 +5,11 @@
     return new Promise((resolve, reject) => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`).then(res => {
             if (!res.ok) {
-                console.error('HTTP error :${res.status}');
+                console.error(`HTTP error :${res.status}`);
+                return reject(new Error(`HTTP error: ${res.status}`));
             }
+            DotNet.invokeMethodAsync('WeatherApp', 'ShowFavoriteButton2', cityName);
+            //resolve(data);
             return res.json();
         }).then(data => resolve(data))
           .catch(error => resolve (error))

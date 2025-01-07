@@ -1,5 +1,7 @@
 ﻿@page "/"
+@using System.Text.Json
 @using WeatherApp.Dtos
+@using WeatherApp.Models
 @rendermode InteractiveServer
 @inject IJSRuntime JSRuntime
 
@@ -14,7 +16,12 @@
                     id="weatherCity"
                     @bind="weatherCity"/>
                 <button class="btn btn-outline-secondary" @onclick="() =>CheckWeatherAsync(weatherCity)">Check weather</button>
-                <button class="btn btn-outline-secondary">Favorite</button>
+                @if (isShowFavorite)
+                {
+                    <button class="btn btn-outline-secondary" onclick="favoriteCity()">Favorite @CityName</button>
+                    
+                }
+               
             </div>
             <hr/>
             @if (weatherResponse != null && weatherResponse.Sys !=null)
@@ -26,7 +33,7 @@
                     <div class="card-body">
                         <h5 class="card-title" id="weather_icon">
                             <img width="50px"
-                                src="https://openweathermap.org/img/wn/@weatherResponse.Weather[0].Icon@@4px.png" />
+                               src="https://openweathermap.org/img/wn/@weatherResponse.Weather[0].Icon@@2x.png"/>
                         </h5>
                         <p class="card-text" id="weather_forecast">
                             @weatherResponse.Weather[0].Main
@@ -45,18 +52,71 @@
 @code{
     private string weatherCity = "";
     private WeatherResponse weatherResponse = new WeatherResponse();
-
+    private static Boolean isShowFavorite = false;
+    private static string CityName = "";
+    private DotNetObjectReference<Home> dotnetHelper;
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if(firstRender)
         {
             // await JSRuntime.InvokeVoidAsync("Alert", "Welcome to this course");
             //await JSRuntime.InvokeVoidAsync("localStorage.setItem", "welcomeTxt", "Welcome to this course!");
+            dotnetHelper = DotNetObjectReference.Create(this);
+            await JSRuntime.InvokeVoidAsync("jsHelper.setDotNetHelper", dotnetHelper);
             await JSRuntime.InvokeVoidAsync("import", "/scripts/cutsom.js");
+
         }
     }
     protected async Task CheckWeatherAsync(string cityName)
     {
         weatherResponse= await JSRuntime.InvokeAsync<WeatherResponse>("checkWeather", cityName);
+
+    }
+    [JSInvokable]
+    public static async Task ShowFavoriteButton()
+    {
+        isShowFavorite = true;
+        // StateHasChanged();
+    }
+    [JSInvokable]
+    public static async Task ShowFavoriteButton2(string cityName)
+    {
+        CityName = cityName;
+        isShowFavorite = true;
+        // StateHasChanged();
+    }
+    [JSInvokable]
+    public async Task FavoriteCity()
+    {
+        //get all items
+
+        //var items = await JSRuntime.InvokeAsync<List<FavoritedCity>>("localStorage.getItem", "favoriteCities");
+        var itemsJson = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "favoriteCities");
+        var items = string.IsNullOrEmpty(itemsJson)
+       ? new List<FavoritedCity>()
+       : JsonSerializer.Deserialize<List<FavoritedCity>>(itemsJson);
+
+        if(items == null)
+        {
+            items = new List<FavoritedCity>();
+        }
+        //update the list
+        items.Add(new FavoritedCity()
+            {
+                Id = items.Count + 1,
+                CityName = CityName
+            });
+        var updatedItemsJson = JsonSerializer.Serialize(items);
+        //set new items
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "favoriteCities", updatedItemsJson);
     }
 }
+<script>
+    var jsHelper = {};
+    jsHelper.setDotNetHelper = function (helper) {
+        jsHelper.dotnetHelper = helper;
+    }
+    function favoriteCity() {
+        jsHelper.dotnetHelper.invokeMethodAsync('FavoriteCity');
+    }
+</script>
