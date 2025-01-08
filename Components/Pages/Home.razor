@@ -4,6 +4,7 @@
 @using WeatherApp.Models
 @rendermode InteractiveServer
 @inject IJSRuntime JSRuntime
+@inject ILogger<Home> Logger
 
 <PageTitle>Home</PageTitle>
 <div class="container">
@@ -64,7 +65,15 @@
             dotnetHelper = DotNetObjectReference.Create(this);
             await JSRuntime.InvokeVoidAsync("jsHelper.setDotNetHelper", dotnetHelper);
             await JSRuntime.InvokeVoidAsync("import", "/scripts/cutsom.js");
+            Logger.LogInformation("custom.js was imported");
 
+        }
+        try
+        {
+            throw new Exception("this is a custom message");
+        }catch(Exception ex)
+        {
+            Logger.LogError(ex.Message);
         }
     }
     protected async Task CheckWeatherAsync(string cityName)

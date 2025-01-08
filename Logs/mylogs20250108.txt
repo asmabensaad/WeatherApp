@@ -1,0 +1,513 @@
+2025-01-08 10:02:21.554 +01:00 [INF] User profile is available. Using 'C:\Users\abs\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-08 10:02:21.783 +01:00 [DBG] Hosting starting
+2025-01-08 10:02:21.797 +01:00 [DBG] Reading data from file 'C:\Users\abs\AppData\Local\ASP.NET\DataProtection-Keys\key-0f5cda8e-eb66-42ef-9754-f496000d7a77.xml'.
+2025-01-08 10:02:21.801 +01:00 [DBG] Reading data from file 'C:\Users\abs\AppData\Local\ASP.NET\DataProtection-Keys\key-4b5d7364-43cb-49b5-a8b6-1ac628757e0a.xml'.
+2025-01-08 10:02:21.810 +01:00 [DBG] Found key {0f5cda8e-eb66-42ef-9754-f496000d7a77}.
+2025-01-08 10:02:21.819 +01:00 [DBG] Found key {4b5d7364-43cb-49b5-a8b6-1ac628757e0a}.
+2025-01-08 10:02:21.826 +01:00 [DBG] Considering key {4b5d7364-43cb-49b5-a8b6-1ac628757e0a} with expiration date 2025-03-10 15:44:26Z as default key.
+2025-01-08 10:02:21.828 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-01-08 10:02:21.831 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-01-08 10:02:21.834 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-01-08 10:02:21.842 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-01-08 10:02:21.844 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-01-08 10:02:21.845 +01:00 [DBG] Using key {4b5d7364-43cb-49b5-a8b6-1ac628757e0a} as the default key.
+2025-01-08 10:02:21.846 +01:00 [DBG] Key ring with default key {4b5d7364-43cb-49b5-a8b6-1ac628757e0a} was loaded during application startup.
+2025-01-08 10:02:21.975 +01:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2025-01-08 10:02:21.975 +01:00 [DBG] Registered SignalR Protocol: blazorpack, implemented by Microsoft.AspNetCore.Components.Server.BlazorPack.BlazorPackHubProtocol.
+2025-01-08 10:02:22.277 +01:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-01-08 10:02:22.364 +01:00 [INF] Now listening on: https://localhost:7043
+2025-01-08 10:02:22.364 +01:00 [INF] Now listening on: http://localhost:5119
+2025-01-08 10:02:22.364 +01:00 [DBG] Loaded hosting startup assembly WeatherApp
+2025-01-08 10:02:22.364 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-01-08 10:02:22.364 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-01-08 10:02:22.369 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-08 10:02:22.369 +01:00 [INF] Hosting environment: Development
+2025-01-08 10:02:22.369 +01:00 [INF] Content root path: C:\Users\abs\source\repos\WeatherApp
+2025-01-08 10:02:22.369 +01:00 [DBG] Hosting started
+2025-01-08 10:02:22.378 +01:00 [DBG] Connection id "0HN9FOCKTKK4D" accepted.
+2025-01-08 10:02:22.378 +01:00 [DBG] Connection id "0HN9FOCKTKK4E" accepted.
+2025-01-08 10:02:22.379 +01:00 [DBG] Connection id "0HN9FOCKTKK4D" started.
+2025-01-08 10:02:22.379 +01:00 [DBG] Connection id "0HN9FOCKTKK4E" started.
+2025-01-08 10:02:22.389 +01:00 [DBG] Connection id "0HN9FOCKTKK4E" received FIN.
+2025-01-08 10:02:22.390 +01:00 [DBG] Connection id "0HN9FOCKTKK4D" received FIN.
+2025-01-08 10:02:22.709 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-01-08 10:02:22.709 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-01-08 10:02:22.810 +01:00 [DBG] Connection id "0HN9FOCKTKK4D" stopped.
+2025-01-08 10:02:22.810 +01:00 [DBG] Connection id "0HN9FOCKTKK4E" stopped.
+2025-01-08 10:02:22.812 +01:00 [DBG] Connection id "0HN9FOCKTKK4E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-01-08 10:02:22.812 +01:00 [DBG] Connection id "0HN9FOCKTKK4D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-01-08 10:02:40.293 +01:00 [DBG] Connection id "0HN9FOCKTKK4F" accepted.
+2025-01-08 10:02:40.293 +01:00 [DBG] Connection id "0HN9FOCKTKK4F" started.
+2025-01-08 10:02:40.335 +01:00 [DBG] Connection id "0HN9FOCKTKK4F" received FIN.
+2025-01-08 10:02:40.336 +01:00 [DBG] Connection id "0HN9FOCKTKK4G" accepted.
+2025-01-08 10:02:40.337 +01:00 [DBG] Connection id "0HN9FOCKTKK4G" started.
+2025-01-08 10:02:40.339 +01:00 [DBG] Connection id "0HN9FOCKTKK4G" received FIN.
+2025-01-08 10:02:40.340 +01:00 [DBG] Connection id "0HN9FOCKTKK4H" accepted.
+2025-01-08 10:02:40.341 +01:00 [DBG] Connection id "0HN9FOCKTKK4H" started.
+2025-01-08 10:02:40.498 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-01-08 10:02:40.498 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-01-08 10:02:40.500 +01:00 [DBG] Connection id "0HN9FOCKTKK4F" stopped.
+2025-01-08 10:02:40.502 +01:00 [DBG] Connection id "0HN9FOCKTKK4G" stopped.
+2025-01-08 10:02:40.503 +01:00 [DBG] Connection id "0HN9FOCKTKK4F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-01-08 10:02:40.503 +01:00 [DBG] Connection id "0HN9FOCKTKK4G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-01-08 10:02:40.503 +01:00 [DBG] Connection 0HN9FOCKTKK4H established using the following protocol: "Tls13"
+2025-01-08 10:02:40.568 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/ - null null
+2025-01-08 10:02:40.682 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-01-08 10:02:40.704 +01:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-01-08 10:02:40.705 +01:00 [DBG] Request matched endpoint '/ (/)'
+2025-01-08 10:02:40.709 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:40.710 +01:00 [INF] Executing endpoint '/ (/)'
+2025-01-08 10:02:40.754 +01:00 [DBG] Begin render root component 'App' with page 'Home'.
+2025-01-08 10:02:40.763 +01:00 [DBG] Initializing root component 0 (WeatherApp.Components.App)
+2025-01-08 10:02:40.768 +01:00 [DBG] Rendering component 0 of type WeatherApp.Components.App
+2025-01-08 10:02:40.777 +01:00 [DBG] Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (WeatherApp.Components.App)
+2025-01-08 10:02:40.777 +01:00 [DBG] Initializing component 2 (WeatherApp.Components.Routes) as child of 0 (WeatherApp.Components.App)
+2025-01-08 10:02:40.778 +01:00 [DBG] Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-01-08 10:02:40.779 +01:00 [DBG] Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-01-08 10:02:40.779 +01:00 [DBG] Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-01-08 10:02:40.780 +01:00 [DBG] Rendering component 2 of type WeatherApp.Components.Routes
+2025-01-08 10:02:40.784 +01:00 [DBG] Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (WeatherApp.Components.Routes)
+2025-01-08 10:02:40.790 +01:00 [DBG] Navigating to component WeatherApp.Components.Pages.Home in response to path '/' with base URI 'https://localhost:7043/'
+2025-01-08 10:02:40.795 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.797 +01:00 [DBG] Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:40.798 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.798 +01:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.798 +01:00 [DBG] Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:40.798 +01:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.798 +01:00 [DBG] Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-01-08 10:02:40.800 +01:00 [DBG] Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-01-08 10:02:40.801 +01:00 [DBG] Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-01-08 10:02:40.801 +01:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.801 +01:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.801 +01:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.801 +01:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.801 +01:00 [DBG] Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-01-08 10:02:40.802 +01:00 [DBG] Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2025-01-08 10:02:40.803 +01:00 [DBG] Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-01-08 10:02:40.803 +01:00 [DBG] Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-01-08 10:02:40.803 +01:00 [DBG] Initializing component 11 (WeatherApp.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2025-01-08 10:02:40.803 +01:00 [DBG] Rendering component 11 of type WeatherApp.Components.Layout.MainLayout
+2025-01-08 10:02:40.807 +01:00 [DBG] Initializing component 12 (WeatherApp.Components.Layout.NavMenu) as child of 11 (WeatherApp.Components.Layout.MainLayout)
+2025-01-08 10:02:40.808 +01:00 [DBG] Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (WeatherApp.Components.Layout.MainLayout)
+2025-01-08 10:02:40.809 +01:00 [DBG] Rendering component 12 of type WeatherApp.Components.Layout.NavMenu
+2025-01-08 10:02:40.811 +01:00 [DBG] Initializing component 14 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:40.813 +01:00 [DBG] Initializing component 15 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:40.813 +01:00 [DBG] Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:40.815 +01:00 [DBG] Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-01-08 10:02:40.816 +01:00 [DBG] Initializing component 17 (WeatherApp.Components.Pages.Home) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2025-01-08 10:02:40.817 +01:00 [DBG] Rendering component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.817 +01:00 [DBG] Rendering component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.817 +01:00 [DBG] Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.817 +01:00 [DBG] Rendering component 17 of type WeatherApp.Components.Pages.Home
+2025-01-08 10:02:40.819 +01:00 [DBG] Initializing component 18 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 17 (WeatherApp.Components.Pages.Home)
+2025-01-08 10:02:40.820 +01:00 [DBG] Rendering component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:40.820 +01:00 [DBG] Initializing component 19 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 18 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2025-01-08 10:02:40.821 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.821 +01:00 [DBG] Initializing component 20 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:40.821 +01:00 [DBG] Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.822 +01:00 [DBG] Rendering component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.908 +01:00 [DBG] An antiforgery cookie token was reused.
+2025-01-08 10:02:40.918 +01:00 [DBG] An antiforgery cookie token was reused.
+2025-01-08 10:02:40.936 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/ - null null
+2025-01-08 10:02:40.938 +01:00 [INF] Executed endpoint '/ (/)'
+2025-01-08 10:02:40.942 +01:00 [DBG] 1 candidate(s) found for the request path '/'
+2025-01-08 10:02:40.942 +01:00 [DBG] Request matched endpoint '/ (/)'
+2025-01-08 10:02:40.943 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:40.943 +01:00 [INF] Executing endpoint '/ (/)'
+2025-01-08 10:02:40.944 +01:00 [DBG] Disposing component 0 of type WeatherApp.Components.App
+2025-01-08 10:02:40.944 +01:00 [DBG] Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-01-08 10:02:40.944 +01:00 [DBG] Begin render root component 'App' with page 'Home'.
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 2 of type WeatherApp.Components.Routes
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 11 of type WeatherApp.Components.Layout.MainLayout
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 12 of type WeatherApp.Components.Layout.NavMenu
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.945 +01:00 [DBG] Disposing component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.946 +01:00 [DBG] Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.946 +01:00 [DBG] Disposing component 17 of type WeatherApp.Components.Pages.Home
+2025-01-08 10:02:40.946 +01:00 [DBG] Disposing component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:40.946 +01:00 [DBG] Disposing component 19 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2025-01-08 10:02:40.946 +01:00 [DBG] Initializing root component 0 (WeatherApp.Components.App)
+2025-01-08 10:02:40.946 +01:00 [DBG] Rendering component 0 of type WeatherApp.Components.App
+2025-01-08 10:02:40.946 +01:00 [DBG] Disposing component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.946 +01:00 [DBG] Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (WeatherApp.Components.App)
+2025-01-08 10:02:40.946 +01:00 [DBG] Initializing component 2 (WeatherApp.Components.Routes) as child of 0 (WeatherApp.Components.App)
+2025-01-08 10:02:40.946 +01:00 [DBG] Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-01-08 10:02:40.946 +01:00 [DBG] Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-01-08 10:02:40.946 +01:00 [DBG] Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-01-08 10:02:40.946 +01:00 [DBG] Rendering component 2 of type WeatherApp.Components.Routes
+2025-01-08 10:02:40.946 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/ - 200 null text/html; charset=utf-8 388.0465ms
+2025-01-08 10:02:40.947 +01:00 [DBG] Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (WeatherApp.Components.Routes)
+2025-01-08 10:02:40.947 +01:00 [DBG] Navigating to component WeatherApp.Components.Pages.Home in response to path '/' with base URI 'https://localhost:7043/'
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.947 +01:00 [DBG] Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.947 +01:00 [DBG] Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-01-08 10:02:40.947 +01:00 [DBG] Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-01-08 10:02:40.947 +01:00 [DBG] Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-01-08 10:02:40.947 +01:00 [DBG] Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2025-01-08 10:02:40.947 +01:00 [DBG] Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 11 (WeatherApp.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 11 of type WeatherApp.Components.Layout.MainLayout
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 12 (WeatherApp.Components.Layout.NavMenu) as child of 11 (WeatherApp.Components.Layout.MainLayout)
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary) as child of 11 (WeatherApp.Components.Layout.MainLayout)
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 12 of type WeatherApp.Components.Layout.NavMenu
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 14 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 15 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 17 (WeatherApp.Components.Pages.Home) as child of 13 (Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary)
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 17 of type WeatherApp.Components.Pages.Home
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 18 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 17 (WeatherApp.Components.Pages.Home)
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 19 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 18 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.948 +01:00 [DBG] Initializing component 20 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:40.948 +01:00 [DBG] Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.948 +01:00 [DBG] Rendering component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.956 +01:00 [DBG] An antiforgery cookie token was reused.
+2025-01-08 10:02:40.959 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-01-08 10:02:40.961 +01:00 [DBG] An antiforgery cookie token was reused.
+2025-01-08 10:02:40.965 +01:00 [INF] Executed endpoint '/ (/)'
+2025-01-08 10:02:40.967 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 0 of type WeatherApp.Components.App
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 2 of type WeatherApp.Components.Routes
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.970 +01:00 [DBG] Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 11 of type WeatherApp.Components.Layout.MainLayout
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 12 of type WeatherApp.Components.Layout.NavMenu
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 13 of type Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 17 of type WeatherApp.Components.Pages.Home
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 18 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 19 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2025-01-08 10:02:40.971 +01:00 [DBG] Disposing component 20 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:40.971 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/ - 200 null text/html; charset=utf-8 35.7095ms
+2025-01-08 10:02:40.975 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7043/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary44y9QgzJDSJkkpLm 359
+2025-01-08 10:02:40.975 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/blazor.web.js - null null
+2025-01-08 10:02:40.975 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-08 10:02:40.976 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/bootstrap/bootstrap.min.css - null null
+2025-01-08 10:02:40.984 +01:00 [DBG] 1 candidate(s) found for the request path '/_framework/blazor.web.js'
+2025-01-08 10:02:40.984 +01:00 [DBG] Request matched endpoint 'Blazor web static files'
+2025-01-08 10:02:40.984 +01:00 [DBG] No candidates found for the request path '/bootstrap/bootstrap.min.css'
+2025-01-08 10:02:40.984 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:40.984 +01:00 [INF] Executing endpoint 'Blazor web static files'
+2025-01-08 10:02:40.984 +01:00 [DBG] Request did not match any endpoints
+2025-01-08 10:02:40.987 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2025-01-08 10:02:40.987 +01:00 [DBG] 1 candidate(s) found for the request path '/_blazor/disconnect'
+2025-01-08 10:02:40.987 +01:00 [DBG] Request matched endpoint 'null'
+2025-01-08 10:02:40.987 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:40.987 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:40.988 +01:00 [INF] The file /_framework/blazor.web.js was not modified
+2025-01-08 10:02:40.988 +01:00 [DBG] Handled. Status code: 304 File: /_framework/blazor.web.js
+2025-01-08 10:02:40.990 +01:00 [INF] Executed endpoint 'Blazor web static files'
+2025-01-08 10:02:40.990 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/blazor.web.js - 304 null text/javascript 14.5276ms
+2025-01-08 10:02:40.994 +01:00 [DBG] Connection id "0HN9FOCKTKK4H", Request id "0HN9FOCKTKK4H:00000005": started reading request body.
+2025-01-08 10:02:40.994 +01:00 [DBG] Connection id "0HN9FOCKTKK4H", Request id "0HN9FOCKTKK4H:00000005": done reading request body.
+2025-01-08 10:02:41.009 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 33.8098ms
+2025-01-08 10:02:41.012 +01:00 [DBG] Circuit with id 'YATZdsqCOIV_odoSE0El8JejZzxdgIRLMngBsK7kbhM' terminating gracefully.
+2025-01-08 10:02:41.013 +01:00 [DBG] Circuit with id 'YATZdsqCOIV_odoSE0El8JejZzxdgIRLMngBsK7kbhM' terminated gracefully.
+2025-01-08 10:02:41.017 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:41.017 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7043/_blazor/disconnect - 200 0 null 42.6023ms
+2025-01-08 10:02:41.060 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.8756ms
+2025-01-08 10:02:41.140 +01:00 [INF] Sending file. Request path: '/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\abs\source\repos\WeatherApp\wwwroot\bootstrap\bootstrap.min.css'
+2025-01-08 10:02:41.140 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/bootstrap/bootstrap.min.css - 200 162720 text/css 164.6855ms
+2025-01-08 10:02:41.180 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_blazor/initializers - null null
+2025-01-08 10:02:41.182 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/favicon.png - null null
+2025-01-08 10:02:41.182 +01:00 [DBG] No candidates found for the request path '/favicon.png'
+2025-01-08 10:02:41.183 +01:00 [DBG] Request did not match any endpoints
+2025-01-08 10:02:41.189 +01:00 [DBG] 1 candidate(s) found for the request path '/_blazor/initializers'
+2025-01-08 10:02:41.189 +01:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'C:\Users\abs\source\repos\WeatherApp\wwwroot\favicon.png'
+2025-01-08 10:02:41.189 +01:00 [DBG] Request matched endpoint 'null'
+2025-01-08 10:02:41.189 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:41.189 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/favicon.png - 200 1148 image/png 7.7367ms
+2025-01-08 10:02:41.189 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:41.194 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:41.194 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_blazor/initializers - 200 null application/json; charset=utf-8 14.0098ms
+2025-01-08 10:02:41.197 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7043/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-01-08 10:02:41.197 +01:00 [DBG] 1 candidate(s) found for the request path '/_blazor/negotiate'
+2025-01-08 10:02:41.197 +01:00 [DBG] Request matched endpoint 'null'
+2025-01-08 10:02:41.197 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:41.197 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:41.206 +01:00 [DBG] New connection fHSGmWniVZfoB15eoju8HQ created.
+2025-01-08 10:02:41.209 +01:00 [DBG] Sending negotiation response.
+2025-01-08 10:02:41.209 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:41.209 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7043/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 12.235ms
+2025-01-08 10:02:41.213 +01:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7043/_blazor?id=mQeSJ_tIgzbnnkEUKRjUEw - null null
+2025-01-08 10:02:41.213 +01:00 [DBG] 1 candidate(s) found for the request path '/_blazor'
+2025-01-08 10:02:41.213 +01:00 [DBG] Request matched endpoint 'null'
+2025-01-08 10:02:41.213 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:41.214 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:41.225 +01:00 [DBG] OnConnectedAsync started.
+2025-01-08 10:02:41.228 +01:00 [DBG] Socket opened using Sub-Protocol: 'null'.
+2025-01-08 10:02:41.239 +01:00 [DBG] Found protocol implementation for requested protocol: blazorpack.
+2025-01-08 10:02:41.243 +01:00 [DBG] Completed connection handshake. Using HubProtocol 'blazorpack'.
+2025-01-08 10:02:41.269 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "0", Target: "StartCircuit", Arguments: [ https://localhost:7043/, https://localhost:7043/, [], CfDJ8GRzXUvLQ7VJqLYaxih1fgpL5PhFtQMz86+5avAy6iDmc4fDQl6uIEXSEVaC4qtsGp1/PK0+Ako0BlmBB8zgM7qMPIAEFUqBAKnekCubFwVYNxzzi++HkrKGO5smT2cc4WzBxRwUKiYhUHoyH5fhUcTa+NsXwe3zrMScokAtKq/XNw5XSputn7+Mc6BkZVTuLcPzXmFcNqFVNtejGjInqtczo6WXQ+tSaFmDtHS0AxfPXOmWVnJv3Bm7x80d29PIOcu8qlTLiRo4G1UPr8DFnMYueRuFzRnPAjMrMHUUD0BtGuFKn5JKgQoV4HnKQGo7fPiTe5KN2kCrqVvasSlVisIo1iBcgjOGqo0ZULdc8vp/Rwx5rC68cZpuDL2bONO29nBzv7tjHFUr1tJhJD2fbLdQWll4Z6zp7/jr99gS9Z7UQp2PW652mxxkWzGhaG+GGNriQmt5SXw4Fz0qLHaChs5WnyyCEsrT2e/DkqhjUr4bO0149PsxBpsD7vtfTl13Td4076zZPBIEHUgLHvCdqb6FRcc+ZVmzvKhAtQ00yLE7 ], StreamIds: [  ] }.
+2025-01-08 10:02:41.329 +01:00 [DBG] Begin invoke JS interop '2': 'Blazor._internal.attachWebRendererInterop'
+2025-01-08 10:02:41.335 +01:00 [DBG] Created circuit eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg for connection fHSGmWniVZfoB15eoju8HQ
+2025-01-08 10:02:41.338 +01:00 [DBG] Circuit initialization started.
+2025-01-08 10:02:41.338 +01:00 [DBG] Circuit initialization succeeded.
+2025-01-08 10:02:41.343 +01:00 [DBG] Created circuit 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' with secret '(redacted)' for 'fHSGmWniVZfoB15eoju8HQ'
+2025-01-08 10:02:41.344 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "EndInvokeJSFromDotNet", Arguments: [ 2, True, [2,true,null] ], StreamIds: [  ] }.
+2025-01-08 10:02:41.349 +01:00 [DBG] The JS interop call with callback id '2' succeeded.
+2025-01-08 10:02:41.352 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":1,"operations":[{"type":"add","ssrComponentId":1,"marker":{"type":"server","prerenderId":"df7f8c52cf23483f852e37d3e9e932fa","key":{"locationHash":"702162CF1BA43B406DCAA8A94A6BE866DB82CA54:0","formattedComponentKey":""},"sequence":0,"descriptor":"CfDJ8GRzXUvLQ7VJqLYaxih1fgqRdzooiz3DRYbanqqVkHVKohISgCeU8Jhwws7w6nMdjCcAISs2h9vdU3l+BwxBZYBPRfJ3WNvmBZd73T7efXt14jd0TKLFB779o5Zun3Ef78xq55V/qGRs/1mxDVfMlN69v6OnQzmGDcsMFtz8CvcYYhSW1Gk3Tfsu7RGPV1ZMppXpiu+a6bu0dBfC/IwEIdjkmjnn3W7dNaCUgQixvV2XuFH3x1254caWnaGGod3LBHthKIvvASAHcJ6xbPUk4gVq+8/AWxhj8/FJ7R40z313reAVr+sSsOjVxGlHHccK7lAbCU9hk11tg8l2xTfIcXdwr/dni3XaWou83GDZILdAxggmJ7IrdYjBYKp33dP8p/QkFho7V0NbVzMdaRCTTEvv4YBUKsR5o8zADIr9onQRv8R84VPaBIPMLwm/YfeTd05dSaKQw3pZ9qN3kARoI1kw0dptedwr2W9Gh0s9MagCKd0MBycGAGT29JdJ5ifgfg==","uniqueId":0}}]}, CfDJ8GRzXUvLQ7VJqLYaxih1fgpL5PhFtQMz86+5avAy6iDmc4fDQl6uIEXSEVaC4qtsGp1/PK0+Ako0BlmBB8zgM7qMPIAEFUqBAKnekCubFwVYNxzzi++HkrKGO5smT2cc4WzBxRwUKiYhUHoyH5fhUcTa+NsXwe3zrMScokAtKq/XNw5XSputn7+Mc6BkZVTuLcPzXmFcNqFVNtejGjInqtczo6WXQ+tSaFmDtHS0AxfPXOmWVnJv3Bm7x80d29PIOcu8qlTLiRo4G1UPr8DFnMYueRuFzRnPAjMrMHUUD0BtGuFKn5JKgQoV4HnKQGo7fPiTe5KN2kCrqVvasSlVisIo1iBcgjOGqo0ZULdc8vp/Rwx5rC68cZpuDL2bONO29nBzv7tjHFUr1tJhJD2fbLdQWll4Z6zp7/jr99gS9Z7UQp2PW652mxxkWzGhaG+GGNriQmt5SXw4Fz0qLHaChs5WnyyCEsrT2e/DkqhjUr4bO0149PsxBpsD7vtfTl13Td4076zZPBIEHUgLHvCdqb6FRcc+ZVmzvKhAtQ00yLE7 ], StreamIds: [  ] }.
+2025-01-08 10:02:41.409 +01:00 [DBG] Update root components started.
+2025-01-08 10:02:41.410 +01:00 [DBG] Opening circuit with id 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg'.
+2025-01-08 10:02:41.414 +01:00 [DBG] Circuit id 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' connected using connection 'fHSGmWniVZfoB15eoju8HQ'.
+2025-01-08 10:02:41.415 +01:00 [DBG] Initializing root component 0 (WeatherApp.Components.Pages.Home)
+2025-01-08 10:02:41.417 +01:00 [DBG] Rendering component 0 of type WeatherApp.Components.Pages.Home
+2025-01-08 10:02:41.417 +01:00 [DBG] Initializing component 1 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 0 (WeatherApp.Components.Pages.Home)
+2025-01-08 10:02:41.417 +01:00 [DBG] Rendering component 1 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:41.417 +01:00 [DBG] Initializing component 2 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 1 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2025-01-08 10:02:41.423 +01:00 [DBG] Sending render batch 2 of size 1366 bytes to client fHSGmWniVZfoB15eoju8HQ.
+2025-01-08 10:02:41.425 +01:00 [DBG] Update root components succeeded.
+2025-01-08 10:02:41.431 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 2,  ], StreamIds: [  ] }.
+2025-01-08 10:02:41.431 +01:00 [DBG] Received confirmation for batch 2
+2025-01-08 10:02:41.436 +01:00 [DBG] Completing batch 2 without error in 14.0027ms.
+2025-01-08 10:02:41.439 +01:00 [DBG] Begin invoke JS interop '3': 'jsHelper.setDotNetHelper'
+2025-01-08 10:02:41.442 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "EndInvokeJSFromDotNet", Arguments: [ 3, True, [3,true,null] ], StreamIds: [  ] }.
+2025-01-08 10:02:41.443 +01:00 [DBG] The JS interop call with callback id '3' succeeded.
+2025-01-08 10:02:41.446 +01:00 [DBG] Begin invoke JS interop '4': 'import'
+2025-01-08 10:02:41.449 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/scripts/cutsom.js - null null
+2025-01-08 10:02:41.449 +01:00 [DBG] No candidates found for the request path '/scripts/cutsom.js'
+2025-01-08 10:02:41.449 +01:00 [DBG] Request did not match any endpoints
+2025-01-08 10:02:41.450 +01:00 [INF] Sending file. Request path: '/scripts/cutsom.js'. Physical path: 'C:\Users\abs\source\repos\WeatherApp\wwwroot\scripts\cutsom.js'
+2025-01-08 10:02:41.451 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/scripts/cutsom.js - 200 826 text/javascript 2.262ms
+2025-01-08 10:02:41.453 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "EndInvokeJSFromDotNet", Arguments: [ 4, True, [4,true,null] ], StreamIds: [  ] }.
+2025-01-08 10:02:41.453 +01:00 [DBG] The JS interop call with callback id '4' succeeded.
+2025-01-08 10:02:41.453 +01:00 [INF] custom.js was imported
+2025-01-08 10:02:41.521 +01:00 [ERR] this is a custom message
+2025-01-08 10:02:43.732 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnLocationChanged", Arguments: [ https://localhost:7043/favorites, , True ], StreamIds: [  ] }.
+2025-01-08 10:02:43.732 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/favorites - null null
+2025-01-08 10:02:43.739 +01:00 [DBG] Location changing to https://localhost:7043/favorites in circuit 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg'.
+2025-01-08 10:02:43.743 +01:00 [DBG] Received notification that the URI has changed to https://localhost:7043/favorites with isIntercepted=true
+2025-01-08 10:02:43.743 +01:00 [DBG] Location change to 'https://localhost:7043/favorites' in circuit 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' succeeded.
+2025-01-08 10:02:43.745 +01:00 [DBG] 1 candidate(s) found for the request path '/favorites'
+2025-01-08 10:02:43.745 +01:00 [DBG] Request matched endpoint '/favorites (/favorites)'
+2025-01-08 10:02:43.745 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:43.746 +01:00 [INF] Executing endpoint '/favorites (/favorites)'
+2025-01-08 10:02:43.747 +01:00 [DBG] Begin render root component 'App' with page 'Favorites'.
+2025-01-08 10:02:43.748 +01:00 [DBG] Initializing root component 0 (WeatherApp.Components.App)
+2025-01-08 10:02:43.748 +01:00 [DBG] Rendering component 0 of type WeatherApp.Components.App
+2025-01-08 10:02:43.748 +01:00 [DBG] Initializing component 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet) as child of 0 (WeatherApp.Components.App)
+2025-01-08 10:02:43.748 +01:00 [DBG] Initializing component 2 (WeatherApp.Components.Routes) as child of 0 (WeatherApp.Components.App)
+2025-01-08 10:02:43.748 +01:00 [DBG] Rendering component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-01-08 10:02:43.748 +01:00 [DBG] Initializing component 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-01-08 10:02:43.748 +01:00 [DBG] Initializing component 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet) as child of 1 (Microsoft.AspNetCore.Components.Web.HeadOutlet)
+2025-01-08 10:02:43.748 +01:00 [DBG] Rendering component 2 of type WeatherApp.Components.Routes
+2025-01-08 10:02:43.749 +01:00 [DBG] Initializing component 5 (Microsoft.AspNetCore.Components.Routing.Router) as child of 2 (WeatherApp.Components.Routes)
+2025-01-08 10:02:43.750 +01:00 [DBG] Navigating to component WeatherApp.Components.Pages.Favorites in response to path '/favorites' with base URI 'https://localhost:7043/'
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:43.751 +01:00 [DBG] Initializing component 6 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:43.751 +01:00 [DBG] Initializing component 7 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 4 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-01-08 10:02:43.751 +01:00 [DBG] Initializing component 8 (Microsoft.AspNetCore.Components.RouteView) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-01-08 10:02:43.751 +01:00 [DBG] Initializing component 9 (Microsoft.AspNetCore.Components.Routing.FocusOnNavigate) as child of 5 (Microsoft.AspNetCore.Components.Routing.Router)
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-01-08 10:02:43.751 +01:00 [DBG] Initializing component 10 (Microsoft.AspNetCore.Components.LayoutView) as child of 8 (Microsoft.AspNetCore.Components.RouteView)
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-01-08 10:02:43.751 +01:00 [DBG] Initializing component 11 (WeatherApp.Components.Layout.MainLayout) as child of 10 (Microsoft.AspNetCore.Components.LayoutView)
+2025-01-08 10:02:43.751 +01:00 [DBG] Rendering component 11 of type WeatherApp.Components.Layout.MainLayout
+2025-01-08 10:02:43.751 +01:00 [DBG] Initializing component 12 (WeatherApp.Components.Layout.NavMenu) as child of 11 (WeatherApp.Components.Layout.MainLayout)
+2025-01-08 10:02:43.752 +01:00 [DBG] Initializing component 13 (WeatherApp.Components.Pages.Favorites) as child of 11 (WeatherApp.Components.Layout.MainLayout)
+2025-01-08 10:02:43.752 +01:00 [DBG] Rendering component 12 of type WeatherApp.Components.Layout.NavMenu
+2025-01-08 10:02:43.752 +01:00 [DBG] Initializing component 14 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:43.752 +01:00 [DBG] Initializing component 15 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:43.752 +01:00 [DBG] Initializing component 16 (Microsoft.AspNetCore.Components.Routing.NavLink) as child of 12 (WeatherApp.Components.Layout.NavMenu)
+2025-01-08 10:02:43.752 +01:00 [DBG] Rendering component 13 of type WeatherApp.Components.Pages.Favorites
+2025-01-08 10:02:43.753 +01:00 [DBG] Initializing component 17 (Microsoft.AspNetCore.Components.Web.PageTitle) as child of 13 (WeatherApp.Components.Pages.Favorites)
+2025-01-08 10:02:43.753 +01:00 [DBG] Initializing component 18 (Microsoft.AspNetCore.Components.Web.ErrorBoundary) as child of 13 (WeatherApp.Components.Pages.Favorites)
+2025-01-08 10:02:43.754 +01:00 [DBG] Initializing component 19 (Microsoft.AspNetCore.Components.Web.ErrorBoundary) as child of 13 (WeatherApp.Components.Pages.Favorites)
+2025-01-08 10:02:43.754 +01:00 [DBG] Rendering component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:43.754 +01:00 [DBG] Rendering component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:43.754 +01:00 [DBG] Rendering component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:43.754 +01:00 [DBG] Rendering component 17 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:43.754 +01:00 [DBG] Initializing component 20 (Microsoft.AspNetCore.Components.Sections.SectionContent) as child of 17 (Microsoft.AspNetCore.Components.Web.PageTitle)
+2025-01-08 10:02:43.754 +01:00 [DBG] Rendering component 18 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.754 +01:00 [DBG] Initializing component 21 (WeatherApp.Components.Pages.Child.FavoriteCity) as child of 18 (Microsoft.AspNetCore.Components.Web.ErrorBoundary)
+2025-01-08 10:02:43.904 +01:00 [WRN] Unhandled exception rendering component: Exception in child  component.City Id=1
+System.Exception: Exception in child  component.City Id=1
+   at WeatherApp.Components.Pages.Child.FavoriteCity.OnInitializedAsync() in C:\Users\abs\source\repos\WeatherApp\Components\Pages\Child\FavoriteCity.razor:line 28
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+2025-01-08 10:02:43.919 +01:00 [DBG] Rendering component 19 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.919 +01:00 [DBG] Initializing component 22 (WeatherApp.Components.Pages.Child.FavoriteCity) as child of 19 (Microsoft.AspNetCore.Components.Web.ErrorBoundary)
+2025-01-08 10:02:43.969 +01:00 [WRN] Unhandled exception rendering component: Exception in child  component.City Id=2
+System.Exception: Exception in child  component.City Id=2
+   at WeatherApp.Components.Pages.Child.FavoriteCity.OnInitializedAsync() in C:\Users\abs\source\repos\WeatherApp\Components\Pages\Child\FavoriteCity.razor:line 28
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+2025-01-08 10:02:43.970 +01:00 [DBG] Rendering component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:43.970 +01:00 [DBG] Initializing component 23 (Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer) as child of 3 (Microsoft.AspNetCore.Components.Sections.SectionOutlet)
+2025-01-08 10:02:43.970 +01:00 [DBG] Disposing component 6 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.970 +01:00 [DBG] Rendering component 18 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.970 +01:00 [DBG] Disposing component 21 of type WeatherApp.Components.Pages.Child.FavoriteCity
+2025-01-08 10:02:43.970 +01:00 [DBG] Rendering component 18 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.970 +01:00 [DBG] Rendering component 19 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.970 +01:00 [DBG] Disposing component 22 of type WeatherApp.Components.Pages.Child.FavoriteCity
+2025-01-08 10:02:43.970 +01:00 [DBG] Rendering component 19 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.970 +01:00 [DBG] Rendering component 23 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.970 +01:00 [DBG] An antiforgery cookie token was reused.
+2025-01-08 10:02:43.971 +01:00 [DBG] An antiforgery cookie token was reused.
+2025-01-08 10:02:43.972 +01:00 [INF] Executed endpoint '/favorites (/favorites)'
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 0 of type WeatherApp.Components.App
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 1 of type Microsoft.AspNetCore.Components.Web.HeadOutlet
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 2 of type WeatherApp.Components.Routes
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 3 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 4 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 5 of type Microsoft.AspNetCore.Components.Routing.Router
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 7 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 8 of type Microsoft.AspNetCore.Components.RouteView
+2025-01-08 10:02:43.972 +01:00 [DBG] Disposing component 9 of type Microsoft.AspNetCore.Components.Routing.FocusOnNavigate
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 10 of type Microsoft.AspNetCore.Components.LayoutView
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 11 of type WeatherApp.Components.Layout.MainLayout
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 12 of type WeatherApp.Components.Layout.NavMenu
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 13 of type WeatherApp.Components.Pages.Favorites
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 14 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 15 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 16 of type Microsoft.AspNetCore.Components.Routing.NavLink
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 17 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 18 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 19 of type Microsoft.AspNetCore.Components.Web.ErrorBoundary
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 20 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2025-01-08 10:02:43.973 +01:00 [DBG] Disposing component 23 of type Microsoft.AspNetCore.Components.Sections.SectionOutlet+SectionOutletContentRenderer
+2025-01-08 10:02:43.973 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/favorites - 200 null text/html; charset=utf-8 241.3105ms
+2025-01-08 10:02:43.976 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "UpdateRootComponents", Arguments: [ {"batchId":2,"operations":[{"type":"remove","ssrComponentId":1}]},  ], StreamIds: [  ] }.
+2025-01-08 10:02:43.976 +01:00 [DBG] Update root components started.
+2025-01-08 10:02:43.976 +01:00 [DBG] Disposing component 0 of type WeatherApp.Components.Pages.Home
+2025-01-08 10:02:43.977 +01:00 [DBG] Disposing component 1 of type Microsoft.AspNetCore.Components.Web.PageTitle
+2025-01-08 10:02:43.977 +01:00 [DBG] Disposing component 2 of type Microsoft.AspNetCore.Components.Sections.SectionContent
+2025-01-08 10:02:43.977 +01:00 [DBG] Sending render batch 3 of size 64 bytes to client fHSGmWniVZfoB15eoju8HQ.
+2025-01-08 10:02:43.979 +01:00 [DBG] Update root components succeeded.
+2025-01-08 10:02:43.980 +01:00 [DBG] Received hub invocation: InvocationMessage { InvocationId: "", Target: "OnRenderCompleted", Arguments: [ 3,  ], StreamIds: [  ] }.
+2025-01-08 10:02:43.980 +01:00 [DBG] Received confirmation for batch 3
+2025-01-08 10:02:43.980 +01:00 [DBG] Completing batch 3 without error in 2.713ms.
+2025-01-08 10:02:45.986 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7043/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryrQAfiw0cD2z5HKyy 359
+2025-01-08 10:02:45.986 +01:00 [DBG] 1 candidate(s) found for the request path '/_blazor/disconnect'
+2025-01-08 10:02:45.986 +01:00 [DBG] Request matched endpoint 'null'
+2025-01-08 10:02:45.986 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-08 10:02:45.986 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:45.986 +01:00 [DBG] Connection id "0HN9FOCKTKK4H", Request id "0HN9FOCKTKK4H:0000001B": started reading request body.
+2025-01-08 10:02:45.986 +01:00 [DBG] Connection id "0HN9FOCKTKK4H", Request id "0HN9FOCKTKK4H:0000001B": done reading request body.
+2025-01-08 10:02:45.987 +01:00 [DBG] Circuit with id 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' terminating gracefully.
+2025-01-08 10:02:45.987 +01:00 [DBG] Waiting for the application to finish sending data.
+2025-01-08 10:02:46.018 +01:00 [DBG] Circuit with id eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg has been removed from the registry for permanent disconnection.
+2025-01-08 10:02:46.018 +01:00 [DBG] Attempting to disconnect circuit with id eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg from connection fHSGmWniVZfoB15eoju8HQ.
+2025-01-08 10:02:46.018 +01:00 [DBG] Failed to disconnect circuit with id eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg. The circuit is not active.
+2025-01-08 10:02:46.019 +01:00 [DBG] OnConnectedAsync ending.
+2025-01-08 10:02:46.019 +01:00 [DBG] Socket closed.
+2025-01-08 10:02:46.020 +01:00 [DBG] Disposing circuit 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' started.
+2025-01-08 10:02:46.020 +01:00 [DBG] Circuit id 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' disconnected from connection 'fHSGmWniVZfoB15eoju8HQ'.
+2025-01-08 10:02:46.020 +01:00 [DBG] Closing circuit with id 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg'.
+2025-01-08 10:02:46.021 +01:00 [DBG] Disposing circuit 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' succeeded.
+2025-01-08 10:02:46.021 +01:00 [DBG] Circuit with id 'eCTseaWRWNmrXT4xAEok10FhdlJnNWpt3zP_F8fgtwg' terminated gracefully.
+2025-01-08 10:02:46.021 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:46.021 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7043/_blazor/disconnect - 200 0 null 35.5259ms
+2025-01-08 10:02:46.026 +01:00 [DBG] Removing connection mQeSJ_tIgzbnnkEUKRjUEw from the list of connections.
+2025-01-08 10:02:46.026 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:02:46.026 +01:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7043/_blazor?id=mQeSJ_tIgzbnnkEUKRjUEw - 200 null null 4813.0635ms
+2025-01-08 10:02:46.026 +01:00 [INF] Connection id "0HN9FOCKTKK4H", Request id "0HN9FOCKTKK4H:00000015": the application completed without reading the entire request body.
+2025-01-08 10:02:47.288 +01:00 [DBG] Connection id "0HN9FOCKTKK4H" received FIN.
+2025-01-08 10:02:47.291 +01:00 [DBG] The connection queue processing loop for 0HN9FOCKTKK4H completed.
+2025-01-08 10:02:47.292 +01:00 [DBG] Connection id "0HN9FOCKTKK4H" is closed. The last processed stream ID was 27.
+2025-01-08 10:02:47.292 +01:00 [DBG] Connection id "0HN9FOCKTKK4H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-01-08 10:02:47.305 +01:00 [DBG] Connection id "0HN9FOCKTKK4H" stopped.
+2025-01-08 10:05:38.088 +01:00 [INF] User profile is available. Using 'C:\Users\abs\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-08 10:05:38.648 +01:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-01-08 10:05:38.719 +01:00 [INF] Now listening on: https://localhost:7043
+2025-01-08 10:05:38.719 +01:00 [INF] Now listening on: http://localhost:5119
+2025-01-08 10:05:38.726 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-08 10:05:38.728 +01:00 [INF] Hosting environment: Development
+2025-01-08 10:05:38.728 +01:00 [INF] Content root path: C:\Users\abs\source\repos\WeatherApp
+2025-01-08 10:05:46.366 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/ - null null
+2025-01-08 10:05:46.487 +01:00 [INF] Executing endpoint '/ (/)'
+2025-01-08 10:05:46.684 +01:00 [INF] Executed endpoint '/ (/)'
+2025-01-08 10:05:46.684 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/bootstrap/bootstrap.min.css - null null
+2025-01-08 10:05:46.685 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/WeatherApp.styles.css - null null
+2025-01-08 10:05:46.685 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/app.css - null null
+2025-01-08 10:05:46.698 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/ - 200 null text/html; charset=utf-8 341.3715ms
+2025-01-08 10:05:46.701 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/blazor.web.js - null null
+2025-01-08 10:05:46.701 +01:00 [INF] Executing endpoint 'Blazor web static files'
+2025-01-08 10:05:46.710 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-08 10:05:46.717 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2025-01-08 10:05:46.719 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 8.2349ms
+2025-01-08 10:05:46.733 +01:00 [INF] Sending file. Request path: '/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\abs\source\repos\WeatherApp\wwwroot\bootstrap\bootstrap.min.css'
+2025-01-08 10:05:46.733 +01:00 [INF] Sending file. Request path: '/_framework/blazor.web.js'. Physical path: 'N/A'
+2025-01-08 10:05:46.733 +01:00 [INF] Executed endpoint 'Blazor web static files'
+2025-01-08 10:05:46.733 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/bootstrap/bootstrap.min.css - 200 162720 text/css 48.9424ms
+2025-01-08 10:05:46.733 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/blazor.web.js - 200 186283 text/javascript 31.8249ms
+2025-01-08 10:05:46.762 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.2417ms
+2025-01-08 10:05:46.868 +01:00 [INF] Sending file. Request path: '/app.css'. Physical path: 'C:\Users\abs\source\repos\WeatherApp\wwwroot\app.css'
+2025-01-08 10:05:46.869 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/app.css - 200 2591 text/css 183.2448ms
+2025-01-08 10:05:46.908 +01:00 [INF] Sending file. Request path: '/WeatherApp.styles.css'. Physical path: 'C:\Users\abs\source\repos\WeatherApp\obj\Debug\net8.0\scopedcss\bundle\WeatherApp.styles.css'
+2025-01-08 10:05:46.909 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/WeatherApp.styles.css - 200 5903 text/css 224.2166ms
+2025-01-08 10:05:47.006 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_blazor/initializers - null null
+2025-01-08 10:05:47.009 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:05:47.013 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:05:47.013 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_blazor/initializers - 200 null application/json; charset=utf-8 6.7651ms
+2025-01-08 10:05:47.021 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7043/_blazor/negotiate?negotiateVersion=1 - null 0
+2025-01-08 10:05:47.025 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:05:47.033 +01:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:05:47.034 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7043/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 13.204ms
+2025-01-08 10:05:47.039 +01:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7043/_blazor?id=B820CIZnVxZaBiY0gAbnGg - null null
+2025-01-08 10:05:47.039 +01:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2025-01-08 10:05:47.187 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7043/scripts/cutsom.js - null null
+2025-01-08 10:05:47.188 +01:00 [INF] Sending file. Request path: '/scripts/cutsom.js'. Physical path: 'C:\Users\abs\source\repos\WeatherApp\wwwroot\scripts\cutsom.js'
+2025-01-08 10:05:47.188 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7043/scripts/cutsom.js - 200 826 text/javascript 1.7909ms
+2025-01-08 10:05:47.194 +01:00 [INF] custom.js was imported
+2025-01-08 10:05:47.265 +01:00 [ERR] this is a custom message
